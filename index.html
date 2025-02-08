@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Name - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Vaagdevi Engineering College</h1>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav id="menu">
+            <button class="close-btn" onclick="toggleMenu()">✖</button>
+            <ul>
+                <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-section="timetable">Timetable</a></li>
+                <li><a href="#" class="nav-link" data-section="faculty">Faculty</a></li>
+                <li><a href="#" class="nav-link" data-section="holidays">Holidays</a></li>
+                <li><a href="#" class="nav-link" data-section="exams">Academic Calendar</a></li>
+                <li><a href="#" class="nav-link" data-section="notes">Notes</a></li>
+                <li><a href="#" class="nav-link" data-section="video-leactures">Video Lectures</a></li>
+                <li><a href="#" class="nav-link" data-section="important-questions">Important Questions</a></li>
+                <li><a href="#" class="nav-link" data-section="question-papers">Question Papers</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="active">
+            <h2>CSM-A</h2>
+            <p>This website is designed to help students access all essential information related to their academic life, including:
+
+                Class Timetable: Stay updated with your daily schedule, including lecture timings, locations, and subjects.
+                Faculty Details: Find the contact information of your professors and faculty members for easy communication.
+                Notes & Resources: Download subject notes, study materials, and PDFs provided by faculty members.
+                Academic Schedule: Keep track of important academic dates, including exam schedules, holidays.Notifications: Receive updates about any changes in schedules, important announcements, or new resources added.</p>
+            <!-- Add more content as needed -->
+
+            <br>
+           <p><h3>CLASS TEACHER - D.SWETHA</h3></p>
+           <br>
+           <a href="tel:+919652440879" style="text-decoration: none;">phone: +91 9652440879</a>
+
+
+        </section>
+
+        
+        
+    
+
+        <!-- Timetable Section -->
+        <section id="timetable">
+            <h2>Class Timetable</h2>
+            <table>
+                <thead>
+                    <tr>
+                    
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>DM</td>
+                        <td>DBMS - LAB</td>
+                        <td>DBMS</td>
+                        <td>JAVA</td>
+                        <td>ATCD</td>
+                        <td>AI</td>
+
+
+                    </tr>
+                    <tr>
+                    
+                        <td>JAVA</td>
+                        <td>DBMS - LAB</td>
+                        <td>ATCD</td>
+                        <td>AI</td>
+                        <td>AI</td>
+                        <td>RT PROJECT</td>
+                        
+                    </tr>
+                
+                    <tr>
+                        
+                        <td>DBMS</td>
+                        <td>DBMS - LAB</td>
+                        <td>DM</td>
+                        <td>DBMS</td>
+                        <td>DM</td>
+                        <td>RT PROJECT</td>
+        
+                    </tr>
+                    <tr>
+            
+                        <td>JAVA - LAB</td>
+                        <td>JAVA</td>
+                        <td>PROLOG</td>
+                        <td>DM</td>
+                        <td>DBMS</td>
+                        <td>GS</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td>JAVA - LAB</td>
+                        <td>ATCD</td>
+                        <td>PROLOG</td>
+                        <td>ATCD</td>
+                        <td>JAVA</td>
+                        <td>LIBRARY</td>
+                        
+                    </tr>
+                    <tr>
+                
+                        <td>JAVA - LAB</td>
+                        <td>AI</td>
+                        <td>PROLOG</td>
+                        <td>GS</td>
+                        <td>LIBRARY</td>
+                        <td>LIBRARY</td>
+            
+                    </tr>
+                    <!-- Add more time slots as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Faculty Section -->
+        <section id="faculty">
+            <h2>Our Faculty</h2>
+            <div id="faculty-list">
+                <!-- Faculty information will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Holidays Section -->
+        <section id="holidays">
+            <h2>Upcoming Holidays</h2>
+            <ul>
+    
+                <li>octobar 10 -  dussehra </li>
+                <li>December 25 - Christmas Day</li>
+                <!-- Add more holidays as needed -->
+            </ul>
+        </section>
+
+        <!-- Exam Dates Section -->
+        <section id="exams">
+            <h2> ACADEMIC CALENDAR </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>event</th>
+                        <th>date</th>
+                        
+                
+                    </tr>
+                </thead>
+                <tbody id="exams-table">
+                    <!-- JavaScript will populate this -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Notes Section -->
+        <section id="notes">
+            <h2>Download Notes</h2>
+            <ul class="notes-list" id="notes-list">
+                <!-- JavaScript will populate this -->
+            </ul>
+        </section>
+
+       <!-- Video Lectures Section -->
+<section id="video-leactures">
+    <h2>DISCRETE MATHEMATICS</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1e5H_9Py_tk?si=X3CPswWHgyhwV1pm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+        
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2>AUTOMATA THEORY AND COMPILER DESIGN</h2>
+    <br>
+    <div class="video-container">
+        <iframe width="560" height="315"  src="https://www.youtube.com/embed/SpRUsVbkFgU?si=iC-VIbA0do868Kg1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+        
+    </div>
+    <BR>
+    <hr>
+    <BR>
+    <h2>DATABASE MANAGEMENT SYSTEM </h2>
+    <bR></bR>
+    <div class="video-container">
+        <iframe width="560" height="315"  src="https://www.youtube.com/embed/vhKnZu9fNXY?si=3o77cQoFaPd8OOVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+        
+    </div>
+    <BR>
+        <HR>
+            <BR>
+    
+    <h2>ARTIFICIAL INTELLIGENCE</h2>
+    <BR>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bf7m52RbAr4?si=DxCFCRgbyH0Y9vc_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2>JAVA</h2>
+    <br>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jqOsLqwQEJ4?si=kwqLyo4A0AVJ7hKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       
+    </div>
+</section>
+
+        
+     <!-- Important Questions Section -->
+<section id="important-questions">
+    <h2>Important Questions</h2>
+    <ul id="important-questions-list">
+        <!-- Important questions will be populated by JavaScript -->
+    </ul>
+</section>
+
+
+        <!-- Question Papers Section -->
+<section id="question-papers">
+    <h2>Question Papers</h2>
+    <ul id="question-papers-list">
+        <!-- Question papers will be populated by JavaScript -->
+    </ul>
+</section>
+
+
+        
+    </main>
+
+    <footer>
+        
+    
+            <p>© 2024 Vaagdevi Engineering College. All Rights Reserved.</p>
+            <p>Developed by <strong>Devulapally Laxmi Prasanna</strong></p>
+        </footer>
+        
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

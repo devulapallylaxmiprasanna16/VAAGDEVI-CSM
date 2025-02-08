@@ -1,0 +1,408 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px; /* Height of the footer */
+}
+
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #ffffff;
+    color: #35424a;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+section.active {
+    display: block;
+}
+
+footer {
+    background-color: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 0px solid #ddd;
+}
+
+th, td {
+    padding: 1px;
+    text-align: center;
+    
+}
+
+th {
+    background-color: #35424a;
+    color: white;
+}
+
+/* Faculty Cards */
+.faculty-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.faculty-member h3 {
+    margin-bottom: 5px;
+    color: #35424a;
+}
+
+
+/* Notes Section */
+.notes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.notes-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notes-list li a {
+    text-decoration: none;
+    color: #35424a;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.notes-list li a:hover {
+    color: #455a64;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* General Notes Section */
+#general-notes {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#general-notes h2 {
+    color: #35424a;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#general-notes-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#general-notes-list li {
+    margin-bottom: 10px;
+}
+
+#general-notes-list a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#general-notes-list a:hover {
+    color: #0056b3;
+}
+
+
+
+
+
+
+
+/* Important Questions Section */
+#important-questions {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#important-questions h2 {
+    color: #35424a;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#important-questions-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#important-questions-list li {
+    margin-bottom: 10px;
+}
+
+#important-questions-list a {
+    color: #28a745;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#important-questions-list a:hover {
+    color: #1e7e34;
+}
+
+
+/* Question Papers Section */
+#question-papers {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#question-papers h2 {
+    color: #35424a;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#question-papers-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#question-papers-list li {
+    margin-bottom: 10px;
+}
+
+#question-papers-list a {
+    color: #dc3545;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#question-papers-list a:hover {
+    color: #bd2130;
+}
+
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 videos in one row */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.video-container iframe {
+    width: 100%; /* Full width inside the grid */
+    height: 200px; /* Set a uniform height */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .video-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 videos per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 videos per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 video per row */
+    }
+}
+
+
+
+
+
+
+/* Header Styles */
+header {
+    background-color:#35424a ;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    
+}
+
+/* Navigation Menu */
+nav {
+    background: #35424a;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 3px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 1px 2px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hamburger Menu - Hidden by default */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+}
+
+/* Close Button for Small Screens */
+.close-btn {
+    display: none;
+    background: none;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    #menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #444;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #menu ul {
+        display: block;
+    }
+
+    #menu ul li {
+        padding: 15px;
+    }
+
+    .close-btn {
+        display: block;
+    }
+}
